@@ -1,0 +1,47 @@
+header {
+  background: #2c2c2c;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  .formContainer {
+    width: 30%;
+    .searchForm {
+      position: relative;
+      width: 100%;
+      input {
+        width: 100%;
+        padding: 7px;
+      }
+      .searchIcon {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .deleteIcon {
+        position: absolute;
+        right: 40px;
+        top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .formContainer {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 368px) {
+  header {
+    .formContainer {
+      width: 70%;
+    }
+  }
+}
